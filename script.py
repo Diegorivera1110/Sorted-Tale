@@ -2,16 +2,11 @@ import utils
 import sorts
 
 bookshelf = utils.load_books('books_small.csv')
+bookshelf_v1 = bookshelf.copy()
+bookshelf_v2 = bookshelf.copy()
 
-# for book in bookshelf:
-#   print(book['title'])
 
-# print(ord("a"))
-# print(ord(" "))
-# print(ord("A"))
-
-book['author_lower'] = book['author'].lower()
-
+# Sort by Title method
 def by_title_ascending(book_a, book_b):
   return book_a['title_lower'] > book_b['title_lower']
 
