@@ -29,7 +29,7 @@ def by_total_length(book_a, book_b):
 
 sort_1 = sorts.bubble_sort(bookshelf, by_title_ascending)
 sort_2 = sorts.bubble_sort(bookshelf, by_author_ascending)
-# sort_3 = sorts.bubble_sort(long_bookshelf, by_total_length)
+sort_3 = sorts.bubble_sort(long_bookshelf, by_total_length)
 
 sorts.quicksort(long_bookshelf, 0, len(long_bookshelf) - 1, by_total_length)
 
